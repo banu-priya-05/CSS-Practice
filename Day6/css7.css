@@ -26,6 +26,24 @@ img {display: block;}
 body{
     font-family: "Acme" ,serif;
     min-height: 100vh;
+    background-color: aliceblue;
+    /* background-image: url("../Day6/img/leaf.png"),
+                      linear-gradient( to bottom, rgba(90, 210, 247, 0.932), #fff, rgb(253, 182, 51));
+    background-repeat: repeat-y, no-repeat;  
+    background-position:  center;   */
+    background: no-repeat top url('../Day6/img/leaf.png'), repeat 
+                linear-gradient( to bottom, rgba(90, 210, 247, 0.932) ,
+                #fff , rgb(253, 182, 51));           
+    background-size: 100% auto;
+}
+.container{
+    background-color: rgb(250, 218, 150); 
+    background-image: url('../Day6/img/city.png');
+    background-repeat: repeat;
+    background-size: cover; 
+    background-position:  top left;
+   
+
 }
 .top {
     border-bottom: 2px solid black;
@@ -35,13 +53,17 @@ body{
     align-items: center;
     gap: 30px;
 
-    background-color: rgb(250, 218, 150); 
-    background-image: url('../Day6/img/city.png');
-    background-repeat:  repeat;
-    background-size: cover;
+    background-color: hsla(226, 63%, 38%, 0.37);
+    
 }
 .h1 {
     font-size: 400%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    /* background-color: #aa1c9c60;
+    padding: 0.25rem;
+    border-radius: 10px; */
+    
 }
 
 .profile-pic-figure{
@@ -66,4 +88,16 @@ body{
     width: 25%;
     height: auto;
 
+}
+
+.clip {
+    font-weight: 300;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url('../Day6/img/profilepic.jpg');
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 5rem;
 }
