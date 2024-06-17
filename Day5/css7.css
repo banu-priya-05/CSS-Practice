@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {display: block;}
+/* End Reset */
+
+/* Utility classes */
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+/* End Utility classes */
+
+body{
+    font-family: "Acme" ,serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+    /* background-image: url("../Day6/img/leaf.png"),
+                      linear-gradient( to bottom, rgba(90, 210, 247, 0.932), #fff, rgb(253, 182, 51));
+    background-repeat: repeat-y, no-repeat;  
+    background-position:  center;   */
+    background: no-repeat top url('../Day6/img/leaf.png'), repeat 
+                linear-gradient( to bottom, rgba(90, 210, 247, 0.932) ,
+                #fff , rgb(253, 182, 51));           
+    background-size: 100% auto;
+}
+.container{
+    background-color: rgb(250, 218, 150); 
+    background-image: url('../Day6/img/city.png');
+    background-repeat: repeat;
+    background-size: cover; 
+    background-position:  top left;
+   
+
+}
+.top {
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: hsla(226, 63%, 38%, 0.37);
+    
+}
+.h1 {
+    font-size: 400%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    /* background-color: #aa1c9c60;
+    padding: 0.25rem;
+    border-radius: 10px; */
+    
+}
+
+.profile-pic-figure{
+    width: 35%;
+}
+
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    border: 5px double gray;
+    border-radius: 50%;
+     
+}
+.example{
+    margin-top: 1rem;
+    padding: 20px;
+    border:1px dotted red;
+}
+
+.example img {
+    width: 25%;
+    height: auto;
+
+}
+
+.clip {
+    font-weight: 300;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url('../Day6/img/profilepic.jpg');
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 5rem;
+}
